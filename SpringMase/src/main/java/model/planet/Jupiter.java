@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:application.properties")
 public class Jupiter implements Planet {
-    @Value("24.79")
+    @Value("${model.jupiter.acceleration}")
     private Double acceleration;
-    @Value("69911.0")
+    @Value("${model.jupiter.radius}")
     private Double radius;
-    @Value("778500000")
+    @Value("${model.jupiter.distance}")
     private Double distance;
 
     @Override

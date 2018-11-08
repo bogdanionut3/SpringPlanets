@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:application.properties")
 public class Neptun implements Planet {
-    @Value("9.78")
+    @Value("${model.neptun.acceleration}")
     private Double acceleration;
-    @Value("24622.0")
+    @Value("${model.neptun.radius}")
     private Double radius;
-    @Value("4.495")
+    @Value("${model.neptun.distance}")
     private Double distance;
 
     @Override

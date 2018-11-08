@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:application.properties")
 public class Pluto implements Planet {
-    @Value("0.620")
+    @Value("${model.pluto.acceleration}")
     private Double acceleration;
-    @Value("1180.0")
+    @Value("${model.pluto.radius}")
     private Double radius;
-    @Value("4425000000")
+    @Value("${model.pluto.distance}")
     private Double distance;
 
     @Override

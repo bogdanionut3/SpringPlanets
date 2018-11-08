@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:application.properties")
 public class Mars implements Planet {
-    @Value("3.73")
+    @Value("${model.mars.acceleration}")
     private Double acceleration;
-    @Value("3397.0")
+    @Value("${model.mars.radius}")
     private Double radius;
-    @Value("227200000")
+    @Value("${model.mars.distance}")
     private Double distance;
 
 

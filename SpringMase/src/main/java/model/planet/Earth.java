@@ -8,11 +8,11 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:application.properties")
 public class Earth implements Planet{
-    @Value("0.320")
+    @Value("${model.earth.acceleration}")
     public Double acceleration;
-    @Value("1188.3")
+    @Value("${model.earth.radius}")
     public Double radius;
-    @Value("149600000.0")
+    @Value("${model.earth.distance}")
     public Double distance;
 
     @Override
